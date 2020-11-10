@@ -1,0 +1,142 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+    margin: none;
+    scroll-behavior: smooth;
+}
+/* Inline Styling Such as Hyperlinks and Text Boxes */
+
+h1{
+    text-align: center;
+}
+
+div{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+a{
+    text-decoration: none;
+    color: #bbb;
+}
+
+input{
+    padding: .5rem;
+}
+
+/* Navbar Styling */
+.Navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #000;
+    padding: 2%;
+    margin: -8px;
+    margin-bottom: 0px;
+}
+
+.Navbar a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding: 2%;
+}
+
+.Navbar a:hover{
+    background-color: #bbb;
+    color: #000;
+    font-weight: 700;
+}
+/* End Navbar */
+
+
+/* Video and Video Text Styling */
+video{
+    width: 100%;
+    display: block;
+    backface-visibility: hidden;
+    filter: grayscale(100%);
+}
+
+.Video_Text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+}
+/* End of Video Style */
+
+
+/* Column / Row Style */
+.Row{
+    display: flex;
+    color: white;
+}
+
+.Column_1{
+    flex: 50%;
+    background-color: #555;
+    padding: 1rem;
+    margin-bottom: -8px;
+}
+
+.Column_2{
+    padding: 1rem;
+    flex: 50%;
+    background-color: #eee;
+}
+
+.Column_2 img{
+    position: relative;
+    left: 10%;
+    justify-content: center;
+    width: 80%;
+    border-radius: 1rem;
+}
+
+.Column_3{
+    padding: 1rem;
+    flex: 50%;
+    background-attachment: #555;
+}
+
+.Column_3 img{
+    position: relative;
+    left: 10%;
+    justify-content: center;
+    width: 80%;
+    border-radius: 1rem;
+}
+
+
+
+/* End of Column / Row Style */
+
+/* Contact Style */
+
+input{
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.textbox{
+    width: 90%;
+}
+
+
+
+/* End Contact Style */
+
+
+/* Footer Style */
+footer{
+    margin: -8px;
+    background-color: #777;
+}
+
+/* End of Footer Style */
+
