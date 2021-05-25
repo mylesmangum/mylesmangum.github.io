@@ -18,7 +18,7 @@
 		<a class="active" href="#Home">Home</a> 
 		<a href="#About">About</a>
 		<a href="#GitHub">GitHub</a>
-		<a href="#Contact">Contact</a>
+		<a href="#Contact" onclick="ShowContact()">Contact</a>
 	</div>
 
 
@@ -46,7 +46,7 @@
 <!-- About section -->
 	<div class="Row" id="About"> 
 		<div class="Column_2"> <!-- Left column -->
-			<img src="/img/pexels-kaboompics-com-6189.jpg" class="column-photo-1" alt="Laptop">
+			<img src="/img/pexels-kaboompics-com-6189.jpg" class="column-photo" alt="Laptop">
 		</div>
   
 		<div class="Column_1"> <!-- Right column -->
@@ -59,35 +59,35 @@
 <!-- GitHub section -->
 	<div class="Row" id="GitHub">
 		<div class="Column_1"> <!-- Left column -->
+			<br><br>
 			<h1>GitHub</h1>
+			<br><br>
 				<p>You can view my coding projects on my GitHub profile here:<br>
 				<center><a href="https://github.com/the-tech-academy" target="_blank">Myles-Mangum GitHub</a></center></p>
 		</div>
 		
 		<div class="Column_2"> <!-- Right column -->
-			<a href="https://github.com/the-tech-academy" target="_blank"><img src="/img/github-logo.png" class="column-photo-2" alt="GitHub"></a>
+			<a href="https://github.com/the-tech-academy" target="_blank"><img src="/img/github-logo.png" class="column-photo" alt="GitHub"></a>
 		</div>
 	</div>
 
 <!-- Contact section -->
-	<div class="Row" id="Contact"> 
-		<div class="Column_3"> <!-- Contact image, left column -->
-			<img src="/img/pexels-anete-lusina-4792737.jpg" alt="Contact_Image">
-		</div>
-	
-		<div class="Column_1"> <!-- Contact form, right "column" -->
+		<button id="contact-button" onclick="ShowContact()">Contact</button>
+		<div id="contact-form" style="display: none;"> <!-- Contact form, right "column" -->
 			<h1>Contact</h2> 
-				<form action="" method="get"> <!-- This specifies where to send the form data and how; it is left blank -->
+				<form action="" method="get" class="submission-box"> <!-- This specifies where to send the form data and how; it is left blank -->
 					<label>Name:</label>
 						<input type="text" class="textbox" placeholder="Please enter your name here">
 					<label>Email:</label>
 						<input type="text" class="textbox" id="Email" name="Email" placeholder="Please enter your email here">
 					<label>Message:</label>
 						<input type="text" class="textbox" id="Message" name="Message" placeholder="Please write your message here">
-						<input type="submit" value="Submit">
+						<input type="submit" value="Submit" class="input-button">
+						<br>
+						<input type="button" value="Close" class="input-button" onclick="CloseContact()">
 				</form>
 		</div>
-	</div>
+	
 	
 <!-- Footer section -->
 	<footer>
@@ -95,7 +95,7 @@
 			<center>Myles Mangum: (703)-229-7402, <br> mangummyles@gmail.com  <a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br>
 		</p>
 	</footer>
-
-		</body>
+	<script src="js/main.js"></script>
+	</body>
 
 </html>
