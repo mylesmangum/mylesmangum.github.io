@@ -1,3 +1,5 @@
+@media only screen and (min-width: 1000px){
+
 html{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -6,7 +8,7 @@ html{
 
 body {
     margin: 0;
-    overflow-x: hidden;
+
 }
 /* Inline Styling Such as Hyperlinks and Text Boxes */
 
@@ -18,10 +20,7 @@ h2{
     text-align: center;
 }
 
-div{
-    margin-left: -8px;
-    margin-right: -8px;
-}
+
 
 a{
     text-decoration: none;
@@ -92,17 +91,17 @@ video{
 .Column_1{
     flex: 50%;
     background-color: #555;
-    padding: 1rem;
-    margin-bottom: -8px;
+    padding: 2rem 1rem 2rem 1rem;
     text-align: center;
-    height: 45vh;
+
+    position: relative;
 }
 
 .Column_2{
     padding: 1rem;
     flex: 50%;
     background-color: #eee;
-    height: 45vh;
+
 }
 
 .Column_2 img{
@@ -110,16 +109,36 @@ video{
     left: 10%;
     justify-content: center;
     width: 80%;
-    border-radius: 5%;
+
+}
+
+.text-container{
+    position:absolute;
+    /* top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; */
+    align-items: center;
 }
 
 
 
 .column-photo{
-    max-height: 100%;
+    max-height: 50vh;
     object-fit: contain;
     margin-top: auto;
     margin-bottom: auto;
+
+}
+
+.column-photo:hover{
+    animation: grow .2s ease-in;
+    transform: scale(1.03);
+}
+
+@keyframes grow {
+    from {transform:scale(1);}
+    to {transform:scale(1.03);}
 }
 
 
@@ -164,8 +183,8 @@ video{
     position: fixed;
     bottom: 0;
     right: 1vh;
-    width: 50vw;
-    height: 55vh;
+    width: 30vw;
+    height: 42vh;
     background-color: white;
     border: black 5px solid;
     padding: 2%;
@@ -186,6 +205,8 @@ input{
 
 .textbox{
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -195,11 +216,12 @@ input{
 
 /* Footer Style */
 footer{
-    margin: -20px;
-    padding: 10px;
-    padding-bottom: 0;
+    text-align: center;
+    padding: 1px;
+
     background-color: #777;
 }
 
 /* End of Footer Style */
 
+}

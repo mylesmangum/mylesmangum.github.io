@@ -6,8 +6,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Myles Mangum Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="/stylesheet/mobile-stylesheet.css">
 		<link rel="stylesheet" type="text/css" href="/stylesheet/desktop-stylesheet.css">
+		
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 
 <!-- Body -->
@@ -17,8 +20,8 @@
 	<div class="Navbar">
 		<a class="active" href="#Home">Home</a> 
 		<a href="#About">About</a>
-		<a href="#GitHub">GitHub</a>
-		<a href="#Contact" onclick="ShowContact()">Contact</a>
+		<a href="https://github.com/mylesmangum/">GitHub</a>
+		<a onclick="ShowContact()">Projects</a>
 	</div>
 
 
@@ -28,9 +31,8 @@
 			<source src="/img/background-video.mp4" type="video/mp4">
 			Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
 		</video>
+		
 	</div>
-
-<!-- Video text --> 
 	<div class="Video_Text"> 
 		<h1 style="color:white;">Myles Mangum's Portfolio Website</h1>
 			<p> 
@@ -43,41 +45,48 @@
 			</p> 
 	</div>
 
-<!-- About section -->
-	<div class="Row" id="About"> 
-		<div class="Column_2"> <!-- Left column -->
-			<img src="/img/pexels-kaboompics-com-6189.jpg" class="column-photo" alt="Laptop">
-		</div>
-  
-		<div class="Column_1"> <!-- Right column -->
-			<br><br> <!-- Breaks to center text -->
-			<h1>About</h2>
-				<p>I am a software developer from D.C. now in Utah.  I am a graduate of the Tech Academy Software Developer Boot Camp, and know the following programming languages: <br><br> C++, Python, JavaScript, C#, Java, and SQL <br><br> I am a full stack developer and would be happy to work with you <a href="#Contact">contact  me here!</a></p>
-		</div>
-	</div>
+<!-- Video text --> 
+	
+
+	
 
 <!-- GitHub section -->
 	<div class="Row" id="GitHub">
 		<div class="Column_1"> <!-- Left column -->
-			<br><br>
 			<h1>GitHub</h1>
-			<br><br>
 				<p>You can view my coding projects on my GitHub profile here:<br>
-				<center><a href="https://github.com/the-tech-academy" target="_blank">Myles-Mangum GitHub</a></center></p>
+				<center><a href="https://github.com/mylesmangum/" target="_blank">Myles-Mangum GitHub</a></center></p>
+				<p></p><a href="/TicTacToe/TicTacToe.html" target="_blank">Here's a link to a Tic Tac Toe game I made</a></p><br>
+				<p>You can find more of my projects and what I did for them in my Project Section</p>
 		</div>
 		
 		<div class="Column_2"> <!-- Right column -->
-			<a href="https://github.com/the-tech-academy" target="_blank"><img src="/img/github-logo.png" class="column-photo" alt="GitHub"></a>
+			<a href="https://github.com/mylesmangum/" target="_blank"><img src="/img/github-logo.png" class="column-photo" alt="GitHub"></a>
 		</div>
 	</div>
+
+<!-- About section -->
+<div class="Row" id="About"> 
+	<div class="Column_2"> <!-- Left column -->
+		<img src="/img/pexels-kaboompics-com-6189.jpg" class="column-photo" alt="Laptop">
+	</div>
+
+	<div class="Column_1"> <!-- Right column -->
+		<h1>About</h2>
+		<p>I am a web developer from D.C. now in Utah.  I am a graduate of the Tech Academy Front End Developer Boot Camp, and know the following programming languages: <br><br> C++, Python, JavaScript, C#, Java, and SQL <br><br> I am a full stack developer and would be happy to work with you <a href="#Contact">contact  me here!</a></p>
+	</div>
+</div>
+
+
+
 
 <!-- Contact section -->
 		<button id="contact-button" onclick="ShowContact()">Contact</button>
 		<div id="contact-form" style="display: none;"> <!-- Contact form, right "column" -->
-			<h1>Contact</h2> 
-				<form action="" method="get" class="submission-box"> <!-- This specifies where to send the form data and how; it is left blank -->
+			<h1 style="margin-top: 0;">Contact</h1> 
+				<form action="https://formspree.io/f/mnqlvvwa" method="POST" class="submission-box"> <!-- This specifies where to send the form data and how; it is left blank -->
 					<label>Name:</label>
-						<input type="text" class="textbox" placeholder="Please enter your name here">
+						<input type="text" name="UserName" class="textbox" placeholder="Please enter your name here">
 					<label>Email:</label>
 						<input type="text" class="textbox" id="Email" name="Email" placeholder="Please enter your email here">
 					<label>Message:</label>
@@ -92,12 +101,12 @@
 <!-- Footer section -->
 	<footer>
 		<p>
-			<center>Myles Mangum: (703)-229-7402, <br> mangummyles@gmail.com  <a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br>
+			Myles Mangum: (703)-229-7402, <br> mangummyles@gmail.com  <a href="https://learncodinganywhere.com/">The Tech Academy</a><br>
 		</p>
 	</footer>
 	
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 
 	<script src="js/main.js"></script>
 	</body>

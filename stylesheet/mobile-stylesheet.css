@@ -1,0 +1,216 @@
+@media only screen and (max-width: 999px){
+
+    html{
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        margin: 0;
+    
+    }
+    /* Inline Styling Such as Hyperlinks and Text Boxes */
+    
+    h1{
+        text-align: center;
+        margin: 0;
+    }
+    
+    h2{
+        text-align: center;
+    }
+    
+    
+    
+    a{
+        text-decoration: none;
+        color: #bbb;
+    }
+    
+    input{
+        padding: .5rem;
+    }
+    
+    /* Navbar Styling */
+    .Navbar{
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        background-color: #000;
+        padding: 0;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .Navbar a{
+        text-decoration: none;
+        font-weight: 500;
+        color: #fff;
+        padding: .8rem;
+        
+    }
+    
+    .Navbar a:hover{
+        background-color: #bbb;
+        color: #000;
+        font-weight: 700;
+    }
+    /* End Navbar */
+    
+    
+    /* Video and Video Text Styling */
+    video{
+        width: 100%;
+        display: none;
+        backface-visibility: hidden;
+        filter: grayscale(100%);
+    }
+    
+    .Video_Text{
+        text-align: center;
+        color: white;
+        background-color: #555;
+        padding: 17rem 1rem 15rem 1rem;
+        border-bottom: 2px solid darkgray;
+    }
+    /* End of Video Style */
+    
+    
+    /* Column / Row Style */
+    .Row{
+        display: flex;
+        color: white;
+        width: 100%;
+        flex-direction: column;
+        border-bottom: 2px solid darkgray;
+    }
+    
+    .Column_1{
+        flex: 100%;
+        background-color: #555;
+        padding: 1rem;
+        text-align: center;
+        height: 80vh;
+    }
+    
+    .Column_2{
+        padding: 0;
+        flex: 100%;
+        background-color: #eee;
+        display: none;
+    }
+    
+    .Column_2 img{
+        position: relative;
+        left: 0%;
+        justify-content: center;
+        width: 100%;
+    
+    }
+    
+    
+    
+    .column-photo{
+        max-height: 100%;
+        object-fit: contain;
+        margin-top: 0;
+        margin-bottom: 0;
+    
+    }
+    
+    .column-photo:hover{
+        animation: grow .2s ease-in;
+        transform: scale(1.03);
+    }
+    
+    @keyframes grow {
+        from {transform:scale(1);}
+        to {transform:scale(1.03);}
+    }
+    
+    
+    
+    /* End of Column / Row Style */
+    
+    /* Contact Style */
+    
+    #contact-button{
+        font-family: 'Montserrat', sans-serif;
+        padding: 1rem;
+        font-size: 1rem;
+        position: fixed;
+        top: 90vh;
+        width: 40%;
+        left: 55vw;
+        font-weight: 600;
+        background-color: white;
+        border: black 3px solid;
+    }
+    
+    #contact-button:hover{
+        background-color: lightgray;
+        cursor: pointer;
+    }
+    
+    .input-button{
+        background-color: white;
+        border: black 3px solid;
+        width: 80%;
+        margin: auto;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+    .input-button:hover{
+        background-color: lightgray;
+        cursor: pointer;
+    }
+    
+    #contact-form{
+        position: fixed;
+        bottom: 0;
+        right: 1vh;
+        width: 30vw;
+        height: 42vh;
+        background-color: white;
+        border: black 5px solid;
+        padding: 2%;
+        text-align: center;
+    }
+    
+    .submission-box{
+        display: inline-block;
+        margin:auto;
+        width: 90%;
+    }
+    
+    input{
+        display: block;
+        margin-top: 2%;
+        margin-bottom: 3%;
+    }
+    
+    .textbox{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    
+    /* End Contact Style */
+    
+    
+    /* Footer Style */
+    footer{
+        text-align: center;
+        padding: 1px;
+    
+        background-color: #777;
+    }
+    
+    /* End of Footer Style */
+    
+    }
