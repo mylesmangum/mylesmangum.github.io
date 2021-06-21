@@ -1,0 +1,40 @@
+.center-container{
+    /* Match canvas width */
+    width: 608px;
+    /* Center and clear margins */
+    margin: 0 auto;
+    /* 50 px down from last element */
+    margin-top: 50px;
+}
+
+h1{
+    text-align: center;
+    font-size: 5rem;
+}
+
+table{
+    /* Collapse borders into 1 */
+    border-collapse: collapse;
+    /* Nobody wants to see that border */
+    border-style: hidden;
+}
+
+td{
+    /* Make cursor a pointer when hovering */
+    cursor: pointer;
+    /* Border style */
+    border: 4px solid black;
+    /* Clear padding */
+    padding: 0;
+    width: 200px;
+    height: 200px;
+}
+
+canvas{
+    /* Make sure we are in the top left corner of the container */
+    position: absolute;
+    /* Place canvas over the rest */
+    z-index: 10;
+    /* Canvas should be invisible */
+    pointer-events: none;
+}
